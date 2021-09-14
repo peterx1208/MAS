@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>A sample map</title>
+  <title>A mini RSVP Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -34,19 +34,32 @@
     <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
     <!-- p means paragraph -->
     <div class="jumbotron">
-        <h1 id="name">A Sample Map</h1>
+        <h1 id="name">A Mini RSVP Form</h1>
+        
     </div>
-
-    <div id="mapQuest" class="profile">
-      <h3>Event Location</h3>
-      <div id="map" style="max-height: 400px;"></div>
-    </div> 
-
-    <hr>
 
     <hr>
 
     <div id="rsvp">
+      
+      <div class="row">
+        <div class="col">
+          <label for="">Your Photo</label>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-6">
+          <div id="camera" class="profile" style="max-width: 250px;">
+            <video autoplay id="camera-video"></video>
+            <button id="camera-button" class="btn btn-primary">Take Photo</button>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <canvas id="camera-canvas"></canvas>
+        </div>
+        
+      </div>
 
       <h3>RSVP Form</h3>
       <div class="row">
